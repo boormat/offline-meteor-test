@@ -1,0 +1,26 @@
+<head>
+  <title>meteor</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}      
+
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+  Posts list
+  <ul>
+  {{#each posts}}
+      <li>{{> post }}</li>  
+
+      {{/each}}
+      </ul>
+</template>
+
+<template name="post">
+  <p> {{counter}} {{who}} {{id}} {{_id}} </p>
+</template>
